@@ -133,3 +133,5 @@ Analyze your site before and after using *Headers Security Advanced & HSTS WP* s
 * CSP Content Security Policy Generator <a href="https://addons.mozilla.org/en-US/firefox/addon/content-security-policy-gen/" target="_blank">addons.mozilla.org</a>
 
 This plugin is updated periodically, our limited support is free, we are available for your feedback (bugs, compatibility issues or recommendations for next updates). We are usually fast :-D.
+
+Wordpress Plugin: <a href="https://wordpress.org/plugins/headers-security-advanced-hsts-wp" target="_blank">https://wordpress.org/plugins/headers-security-advanced-hsts-wp</a>
