@@ -1,0 +1,29 @@
+# Reporting Security Issues
+
+TentaclePlugins takes the security of its plugins very seriously and encourages responsible disclosure of any vulnerabilities.
+
+To report a security issue with the "Headers Security Advanced & HSTS WP" plugin, please follow the instructions below. We appreciate your efforts in helping us improve the security of our software and will publicly acknowledge significant contributions.
+
+## How to Report a Vulnerability
+
+1. **Submit the Report**  
+   Please submit your report using our security contact form: [Security Report Form](https://www.tentacleplugins.com). Be sure to include:
+   - A detailed description of the vulnerability and context
+   - Steps to reproduce the issue
+   - System and WordPress version details
+
+2. **Acknowledgment of Receipt**  
+   After you submit a report, our security team will send a confirmation within 48 hours outlining the next steps to address the issue. During our analysis, we may ask for further details or clarification.
+
+3. **Progress Updates**  
+   We will keep you informed of the progress towards resolving the issue and will release a public patch once it is fixed. For critical vulnerabilities, we will coordinate on the most appropriate timing for an announcement.
+
+4. **Reporting Issues in Third-party Modules**  
+   If the security issue pertains to a third-party module, we encourage you to report the problem directly to the team responsible for that module or via the [npm contact form](https://www.npmjs.com/support) by selecting "I'm reporting a security vulnerability."
+
+We appreciate your help and contributions in keeping our products secure. Thank you for your collaboration and commitment to security!
+
+# Security Contacts
+
+Contact: mailto:support@tentacleplugins.com
+Policy: https://www.tentacleplugins.com/security-policy

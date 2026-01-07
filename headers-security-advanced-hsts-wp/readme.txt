@@ -3,8 +3,8 @@ Contributors: unicorn03, unicorn07, erku, alexclassroom,
 Donate link: https://www.buymeacoffee.com/tentacleplugins
 Tags: headers security, hsts, headers, clickjacking, csp
 Requires at least: 4.7
-Tested up to: 6.6.1
-Stable tag: 5.0.40
+Tested up to: 6.8.3
+Stable tag: 5.2.4
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -17,12 +17,14 @@ Best all-in-one WordPress security plugin, uses HTTP & HSTS response headers to 
 
 The **Headers Security Advanced & HSTS WP** project implements HTTP response headers that your site can use to increase the security of your website. The plug-in will automatically set up all Best Practices (you don't have to think about anything), these HTTP response headers can prevent modern browsers from running into easily predictable vulnerabilities. The Headers Security Advanced & HSTS WP project wants to popularize and increase awareness and usage of these headers for all wordpress users.
 
-This plugin is developed by TentaclePlugins by irn3, we care about WordPress security and best practices.
+This plugin is developed by OpenHeaders by irn3, we care about WordPress security and best practices.
 
 Check out the best features of **Headers Security Advanced & HSTS WP:**
 
-  * X-XSS-Protection (non-standard)
-  * Expect-CT
+  * X-XSS-Protection (Deprecated)
+  * Pragma (Deprecated)
+  * Public-Key-Pins (Deprecated)
+  * Expect-CT (Deprecated)
   * Access-Control-Allow-Origin
   * Access-Control-Allow-Methods
   * Access-Control-Allow-Headers
@@ -236,6 +238,43 @@ Over an HTTP connection we get Content-Security-Policy, X-Content-Type-Options, 
 
 No, Headers Security Advanced & HSTS WP is Fast, Secure and does not affect the SEO and speed of your website.
 
+= Content Security Policy (CSP) – Best Practices =
+
+When writing your CSP directives in the plugin settings, please follow these rules to avoid invalid configurations:
+
+**1. Always use single quotes `'` for CSP keywords**
+
+CSP keywords must always use straight ASCII single quotes:
+
+- 'self'
+- 'none'
+- 'unsafe-inline'
+- 'unsafe-eval'
+- 'strict-dynamic'
+
+These are required by the CSP specification.
+
+**2. Never use double quotes `"` inside the CSP**
+
+Double quotes are used only *outside* the policy (for example by Apache when setting headers), not inside the CSP syntax.  
+Using double quotes inside the policy may break the .htaccess configuration.
+
+**3. Do not use “smart quotes” or curly quotes (‘ ’ “ ”)**
+
+Smart quotes often appear when copying text from Word, Google Docs, PDFs, email clients, or mobile keyboards. These characters are invalid in CSP and may cause the browser to reject the policy or Apache to return HTTP 500 errors.
+
+The plugin automatically converts smart quotes to standard quotes, but it is recommended to avoid them when writing your policy.
+
+**5. What happens if a user enters an invalid CSP?**
+
+Starting from version 5.2.4, the plugin automatically:
+- Normalizes curly quotes to ASCII quotes
+- Replaces invalid double quotes inside the CSP
+- Prevents malformed CSP syntax from breaking .htaccess
+- Falls back to the built-in default CSP if the input is clearly invalid
+
+This ensures that even incorrect CSP input will not cause the site to crash.
+
 = What is HSTS (Strict Transport Security)? =
 
 It was created as a solution to force the browser to use secure connections when a site is running on HTTPS. It is a security header that is added to the web server and reflected in the response header as Strict-Transport-Security. HSTS is important because it addresses the following anomalies:
@@ -258,7 +297,7 @@ If you want to check the HSTS status of your site, you can do so here: <a href="
 
 = Can I report a bug or request a feature? =
 
-You can report bugs or request new features right <a href="mailto:support@tentacleplugins.com">support@tentacleplugins[dot]com</a>
+You can report bugs or request new features right <a href="mailto:support@openheaders.org">support@openheaders[dot]org</a>
 
 = Disable FLoC, Google's advertising technology =
 
@@ -309,6 +348,14 @@ This will cause the <a href="https://developers.cloudflare.com/cache/how-to/purg
 4. Allez dans 'settings' > 'Headers Security Advanced & HSTS WP'. Pour personnaliser les en-têtes
 5. Vous pouvez modifier cette option quand vous le souhaitez, Headers Security Advanced & HSTS WP est réglé automatiquement.
 
+= SPANISH =
+
+1. Ve a Plugins > Añadir nuevo.
+2. Busca Headers Security Advanced & HSTS WP.
+3. Busca este plugin, descárgalo y actívalo.
+4. Ve a Ajustes > Headers Security Advanced & HSTS WP para personalizar los encabezados.
+5. Puedes cambiar esta opción cuando desees, Headers Security Advanced & HSTS WP se configura automáticamente.
+
 = DEUTSCH =
 
 1. Gehen Sie zu Plugins 'Neu hinzufügen'.
@@ -316,6 +363,22 @@ This will cause the <a href="https://developers.cloudflare.com/cache/how-to/purg
 3. Suchen Sie nach diesem Plugin, laden Sie es herunter und aktivieren Sie es.
 4. Gehen Sie zu "Einstellungen" > "Kopfzeilen Sicherheit Erweitert & HSTS WP". So passen Sie die Kopfzeilen an
 5. Sie können diese Option jederzeit ändern, Headers Security Advanced & HSTS WP wird automatisch eingestellt.
+
+= PORTUGUESE =
+
+1. Vá para Plugins > Adicionar novo.
+2. Procure por Headers Security Advanced & HSTS WP.
+3. Procure por este plugin, baixe-o e ative-o.
+4. Vá para Configurações > Headers Security Advanced & HSTS WP para personalizar os cabeçalhos.
+5. Você pode alterar esta opção sempre que desejar, Headers Security Advanced & HSTS WP é configurado automaticamente.
+
+= SWEDISH =
+
+1. Gå till Plugins > Lägg till nytt.
+2. Sök efter Headers Security Advanced & HSTS WP.
+3. Sök efter denna plugin, ladda ner och aktivera den.
+4. Gå till Inställningar > Headers Security Advanced & HSTS WP för att anpassa rubrikerna.
+5. Du kan ändra detta alternativ när du vill, Headers Security Advanced & HSTS WP är inställt automatiskt.
 
 == Screenshots ==
 
@@ -331,15 +394,21 @@ This will cause the <a href="https://developers.cloudflare.com/cache/how-to/purg
 
 == Changelog ==
 
-= 5.0.40 =
+= 5.2.4 =
 I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
 
-With version 5.0.40, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
+With version 5.2.4, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
 
 But that's not all. This update brings seamless integration with the industry's leading security monitoring platforms-Sentry, Datadog, and Report URI. These integrations offer enhanced reporting capabilities, providing detailed information on content security policy (CSP) violations and improving site security.
 
-- Preparation: Coming in the next updates is a new interface optimized to the smallest detail;
-- Fixed: Fixed a critical error that occurred when the flush_rules() function was called on a null object, causing the error;
-- Fixed: Fixed a problem that could occur on a small user base by blocking synchronous requests and disabling features, this only from Chrome browser;
+- Added: Link for external support in the plugin's action list (under the Plugin section).
+- Added: Support for multiple languages in the configuration process.
+- Fixed: When the plugin is deactivated, custom settings are retained and not lost.
+- Fixed: Fixed an issue with the display of the donation link in some WordPress environments.
+- Fixed: Added protection against malformed CSP values containing double quotes ("") which could break the .htaccess configuration and cause HTTP 500 errors.
+- Fixed: Corrected quote handling in the Permissions-Policy directive to prevent 500 errors in Apache.
+- Improved: Code optimization for better compatibility with WordPress version 6.0.
+- Improved: Improved overall robustness of CSP parsing to avoid site downtime caused by incorrect user input.
+- New: We are adding a new external support system to improve the speed and effectiveness of responses.
 
-By updating to 5.0.40, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!
+By updating to 5.2.4, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!

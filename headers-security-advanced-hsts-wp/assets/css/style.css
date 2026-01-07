@@ -1,4 +1,4 @@
-.HeaderSecurityAdvancedHSTSWPROSHUEgrid_settings {grid-column-gap: 2.5rem; display: grid; grid-template-columns: repeat(1,1fr); width: 70%;}
+.HeaderSecurityAdvancedHSTSWPROSHUEgrid_settings {grid-column-gap: 2.5rem; display: grid; grid-template-columns: repeat(1,1fr); width: 87%;}
 .HeaderSecurityAdvancedHSTSWPROSHUEtxexttextSize p {font-size: 11px; color: #717171; text-align: justify; font-weight: 400;}
 .HeaderSecurityAdvancedHSTSWPROSHUEtxextSizeCenter {font-size: 10px; color: #717171; text-align: center;}
 .HeaderSecurityAdvancedHSTSWPROSHUEts03 {line-height: 1.8 !important;}
@@ -12,7 +12,7 @@
 .HeaderSecurityAdvancedHSTSWPROSHUEbksnack:hover {color: #f1f1f1;background: linear-gradient(to right, #0965c8, #023c66);}
 .HeaderSecurityAdvancedHSTSWPROSHUEbksnacka {border-radius: 24px; box-sizing: border-box; color: #ffffff !important; cursor: pointer; display: inline-block; font-size: .975rem; font-weight: 500; margin: 0; outline: 0; overflow: hidden; padding: 0.425rem 1.1rem; text-decoration: none; text-overflow: ellipsis; transition: all .15s ease-in-out; vertical-align: top; background: linear-gradient(to right, #0976ea, #005ea3);}
 .HeaderSecurityAdvancedHSTSWPROSHUEbksnacka:hover {color: #f1f1f1;background: linear-gradient(to right, #0965c8, #023c66);}
-.HeaderSecurityAdvancedHSTSWPROSHUEbkgsuccess {align-items: baseline; background: linear-gradient(to right, #0f135e, #af4ecd); color: #fff; display: flex; padding: 1.5rem 2.25rem 1.5rem 4rem; margin: 1em 1em -1em 1em; margin-bottom: -1em !important; z-index: 10; position: relative;}
+.HeaderSecurityAdvancedHSTSWPROSHUEbkgsuccess {align-items: baseline; background: linear-gradient(to right, #0f135e, #af4ecd); color: #fff; display: flex; padding: 1.5rem 2.25rem 1.5rem 4rem; margin: 1em 1em -1em 1em; margin-bottom: -1em !important; z-index: 10; position: relative; border-radius: 20px 20px 0px 0px;}
 .HeaderSecurityAdvancedHSTSWPROSHUEttxred {color: #8600af;}
 .HeaderSecurityAdvancedHSTSWPROSHUEtxsilv {color: #3c434a; font-size: 1.8rem; line-height: 2.1rem; font-weight:600; margin: 0 0 2rem; width: 70%;}
 .HeaderSecurityAdvancedHSTSWPROSHUEbkgpadw {background: #ffffff; margin: 1em; padding: 4rem 4rem 6rem;}
@@ -28,17 +28,22 @@
 .HeaderSecurityAdvancedHSTSWPROSHUErw1:active {color:#ffffff;} 
 .HeaderSecurityAdvancedHSTSWPROSHUEims11 {height: 30px; width: 30px; margin-top: -6px !important;} 
 .HeaderSecurityAdvancedHSTSWPROSHUEtboxy1314 {color: #5b06b0;} 
+.HeaderSecurityAdvancedHSTSWPROSHUEdleft2953 {margin-left: 15px;}
 .HeaderSecurityAdvancedHSTSWPROSHUEtboxy1348 {color: #5b06b0;} 
 .HeaderSecurityAdvancedHSTSWPROSHUEtboxy1440 {color: #5b06b0; margin-bottom: -7px;} 
 .HeaderSecurityAdvancedHSTSWPROSHUEbadge2049{width: auto; height: auto; display: inline-flex; align-items: center; border-radius: 100px; background-color: #f1e3ff; color: #5b06b0; text-transform: capitalize; font-size: 14px; padding: .5rem 1.3rem; margin-top: -15px; margin-right: 10px;}
 .HeaderSecurityAdvancedHSTSWPROSHUEbadge2049 a {text-decoration: none; color: #5b06b0;}
 .HeaderSecurityAdvancedHSTSWPROSHUEbadge1950{width: auto; height: auto; display: inline-flex; align-items: center; border-radius: 100px; background-color: #f1e3ff; color: #5b06b0; text-transform: capitalize; font-size: 14px; padding: .5rem 1.3rem; margin-top: -15px; margin-right: 10px;}
 .HeaderSecurityAdvancedHSTSWPROSHUEbadge1950 a {text-decoration: none; color: #5b06b0;}
-.HeaderSecurityAdvancedHSTSWPROSHUEcltab1636 {width: 250px !important;} 
+.HeaderSecurityAdvancedHSTSWPROSHUEbadge2450{width: auto; height: auto; display: inline-flex; align-items: center; border-radius: 100px; background-color: #f1e3ff; color: #5b06b0; text-transform: capitalize; font-size: 14px; padding: .5rem 1.3rem; margin-top: 15px; margin-right: 10px;}
+.HeaderSecurityAdvancedHSTSWPROSHUEbadge2450 a {text-decoration: none; color: #5b06b0;}
+.HeaderSecurityAdvancedHSTSWPROSHUEcltab1636 {width: 250px !important; padding-right: 50px !important;} 
 .HeaderSecurityAdvancedHSTSWPROSHUEselspeed1127 {display:flex;margin-top:30px;}
 .HeaderSecurityAdvancedHSTSWPROSHUEselspace1128t {margin-top: 60px; margin-bottom: 60px;}
-.HeaderSecurityAdvancedHSTSWPROSHUEselspace1128b {margin-bottom: 60px;} 
-.HeaderSecurityAdvancedHSTSWPROSHUEbub1459bk {position: absolute; top: 0; right: 0; display: initial !important; filter: blur(50px); width: 44%; height: 1200px; overflow: hidden; opacity: 23%;}
+.HeaderSecurityAdvancedHSTSWPROSHUEselspace1128b {margin-bottom: 60px;}
+.HeaderSecurityAdvancedHSTSWPROSHUE_btntex{width: 1.5rem; height: 1.5rem; position: relative; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; align-items: center; justify-content: center; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(224, 220, 229); border-right-color: rgb(224, 220, 229); border-bottom-color: rgb(224, 220, 229); border-left-color: rgb(224, 220, 229); box-shadow: rgba(43, 34, 51, 0.04) 0px 1px 2px inset; background-image: none; appearance: none; transition-duration: 0.1s, 0.1s; transition-timing-function: ease, ease; transition-delay: 0s, 0s; transition-property: border, box-shadow; margin-top: 0px;}
+.HeaderSecurityAdvancedHSTSWPROSHUE_textarea{width: 100%; color: rgb(62, 52, 70); background-color: rgb(255, 255, 255); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border: 1px solid rgb(224,220,229); border-right-color: rgb(224, 220, 229); border-bottom-color: rgb(224, 220, 229); border-left-color: rgb(224, 220, 229); border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; box-shadow: rgba(43, 34, 51, 0.04) 0px 1px 2px inset; font-size: 0.875rem; font-weight: 300; color: rgb(62, 52, 70);}
+.HeaderSecurityAdvancedHSTSWPROSHUEbub1459bk {position: absolute; top: 0; right: 0; display: initial !important; filter: blur(50px); width: 44%; height: 1200px; overflow: hidden; opacity: 23%;z-index:-3;}
 .HeaderSecurityAdvancedHSTSWPROSHUEbub14591 {transform: translate3d(10px, -55px, 0px); background: #b2b0ff; height: 900px; left: 50px; top: -250px; width: 700px;border-radius: 50%;will-change: transform;}
 .HeaderSecurityAdvancedHSTSWPROSHUEbub14592 {transform: translate3d(45px, -5px, 0px); background: #f1e3ff; height: 900px; left: 50px; top: -170px; width: 1200px;position: absolute;will-change: transform;}
 .HeaderSecurityAdvancedHSTSWPROSHUEgridgap1546 {grid-column-gap: 2.5rem; display: grid; grid-template-columns: repeat(2,1fr); width: 70%; z-index: 10; position: relative;} 

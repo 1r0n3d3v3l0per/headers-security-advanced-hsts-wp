@@ -1,3 +1,55 @@
+= 5.0.43 =
+I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
+
+With version 5.0.43, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
+
+But that's not all. This update brings seamless integration with the industry's leading security monitoring platforms-Sentry, Datadog, and Report URI. These integrations offer enhanced reporting capabilities, providing detailed information on content security policy (CSP) violations and improving site security.
+
+- New: Wordpress 6.8.0 compatibility 
+- Fixed: Fixed a critical error that occurred when enabling the “Enable preload” option due to an invalid string format in the printf function . The error generated an “Unknown format specifier” message. Now the string contains the correct format specifiers (%s), preventing further crashes;
+
+By updating to 5.0.43, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!
+
+= 5.0.42 =
+I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
+
+With version 5.0.42, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
+
+But that's not all. This update brings seamless integration with the industry's leading security monitoring platforms-Sentry, Datadog, and Report URI. These integrations offer enhanced reporting capabilities, providing detailed information on content security policy (CSP) violations and improving site security.
+
+- New: Wordpress 6.7.1 compatibility 
+- Preparation: Coming in the next updates is a new interface optimized to the smallest detail;
+- Fixed: Incorrect usage of `236` function causing a fatal error in the admin panel.
+- Fixed: Fixed a critical error that occurred when enabling the “Enable preload” option due to an invalid string format in the printf function . The error generated an “Unknown format specifier” message. Now the string contains the correct format specifiers (%s), preventing further crashes;
+
+By updating to 5.0.42, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!
+
+= 5.0.41 =
+I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
+
+With version 5.0.41, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
+
+But that's not all. This update brings seamless integration with the industry's leading security monitoring platforms-Sentry, Datadog, and Report URI. These integrations offer enhanced reporting capabilities, providing detailed information on content security policy (CSP) violations and improving site security.
+
+- Preparation: Coming in the next updates is a new interface optimized to the smallest detail;
+- Preparation: New structure to prepare the plugin for optimized HSTS;
+- Fixed: Fixed a critical error that occurred when enabling the “Enable preload” option due to an invalid string format in the printf function . The error generated an “Unknown format specifier” message. Now the string contains the correct format specifiers (%s), preventing further crashes;
+
+By updating to 5.0.41, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!
+
+= 5.0.40 =
+I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
+
+With version 5.0.40, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
+
+But that's not all. This update brings seamless integration with the industry's leading security monitoring platforms-Sentry, Datadog, and Report URI. These integrations offer enhanced reporting capabilities, providing detailed information on content security policy (CSP) violations and improving site security.
+
+- Preparation: Coming in the next updates is a new interface optimized to the smallest detail;
+- Fixed: Fixed a critical error that occurred when the flush_rules() function was called on a null object, causing the error;
+- Fixed: Fixed a problem that could occur on a small user base by blocking synchronous requests and disabling features, this only from Chrome browser;
+
+By updating to 5.0.40, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!
+
 = 5.0.39 =
 I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
 
