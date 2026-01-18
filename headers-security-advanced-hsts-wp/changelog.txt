@@ -1,3 +1,22 @@
+= 5.2.4 =
+I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
+
+With version 5.2.4, I have gone above and beyond to ensure that your experience is nothing short of exceptional. I have eliminated numerous bugs, improved annoying pixels, and updated the graphics in a sleek and modern way. The result? A plugin that not only looks great, but works even better.
+
+But that's not all. This update brings seamless integration with the industry's leading security monitoring platforms-Sentry, Datadog, and Report URI. These integrations offer enhanced reporting capabilities, providing detailed information on content security policy (CSP) violations and improving site security.
+
+- Added: Link for external support in the plugin's action list (under the Plugin section).
+- Added: Support for multiple languages in the configuration process.
+- Fixed: When the plugin is deactivated, custom settings are retained and not lost.
+- Fixed: Fixed an issue with the display of the donation link in some WordPress environments.
+- Fixed: Added protection against malformed CSP values containing double quotes ("") which could break the .htaccess configuration and cause HTTP 500 errors.
+- Fixed: Corrected quote handling in the Permissions-Policy directive to prevent 500 errors in Apache.
+- Improved: Code optimization for better compatibility with WordPress version 6.0.
+- Improved: Improved overall robustness of CSP parsing to avoid site downtime caused by incorrect user input.
+- New: We are adding a new external support system to improve the speed and effectiveness of responses.
+
+By updating to 5.2.4, you’re not just improving your site’s security – you’re optimizing it with the best tools available. Our goal is to provide you with the most beautiful, fastest, and most impressive plugin experience around. So, shall we get started? Hit "update" and step into a new era of security and performance with Headers Security Advanced & HSTS WP. Enjoy the upgrade!
+
 = 5.0.43 =
 I don't want to tell you what to do, but here's the thing: When you update the Headers Security Advanced & HSTS WP plugin, you don't just click a button, you enter a world of enhanced security and performance.
 
