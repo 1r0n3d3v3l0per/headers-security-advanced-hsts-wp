@@ -1,5 +1,5 @@
 === Headers Security Advanced & HSTS WP ===
-Contributors: unicorn03, unicorn07, erku, alexclassroom,
+Contributors: unicorn03, alexclassroom,
 Donate link: https://www.buymeacoffee.com/tentacleplugins
 Tags: headers security, hsts, headers, clickjacking, csp
 Requires at least: 4.7
