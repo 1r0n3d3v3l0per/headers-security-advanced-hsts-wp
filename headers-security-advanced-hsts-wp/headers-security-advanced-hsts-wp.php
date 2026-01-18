@@ -3,7 +3,7 @@
  * Plugin Name: Headers Security Advanced & HSTS WP
  * Plugin URI: https://openheaders.org
  * Description: Headers Security Advanced & HSTS WP - Simple, Light and Fast. The plugin uses advanced security rules that provide huge levels of protection and it is important that your site uses it. This step is important to submit your website and/or domain to an approved HSTS list. Google officially compiles this list and it is used by Chrome, Firefox, Opera, Safari, IE11 and Edge. You can forward your site to the official HSTS preload directory. Cross Site Request Forgery (CSRF) is a common attack with the installation of Headers Security Advanced & HSTS WP will help you mitigate CSRF on your WordPress site.
- * Version: 5.2.4
+ * Version: 5.2.5
  * Text Domain: headers-security-advanced-hsts-wp
  * Domain Path: /languages
  * Author: 🐙 Andrea Ferro
@@ -23,11 +23,15 @@ if ( ! function_exists( 'add_action' ) ) {
     die( 'Don\'t try to be smart with us, only real ninjas can enter here!' );
 }
 
-const HSTS_PLUGIN_VERSION = '5.2.4';
+const HSTS_PLUGIN_VERSION = '5.2.5';
 const HSTS_STANDARD_VALUE_CSP = 'upgrade-insecure-requests;';
 const HSTS_STANDARD_VALUE_PERMISSIONS_POLICY = 'accelerometer=(), autoplay=(), camera=(), cross-origin-isolated=(), display-capture=(self), encrypted-media=(), fullscreen=*, geolocation=(self), gyroscope=(), keyboard-map=(), magnetometer=(), microphone=(), midi=(), payment=*, picture-in-picture=*, publickey-credentials-get=(), screen-wake-lock=(), sync-xhr=*, usb=(), xr-spatial-tracking=(), gamepad=(), serial=()';
 
-function hsts_plugin_get_headers( array $headers = array() ): array {
+function hsts_plugin_get_headers( $headers = array() ) {
+        if ( ! is_array( $headers ) ) {
+            $headers = array();
+        }
+    
         $headers['Access-Control-Allow-Methods']             = 'GET,POST';
         $headers['Access-Control-Allow-Headers']             = 'Content-Type, Authorization';
         $headers['Content-Security-Policy']                  = hsts_plugin_get_csp_header();
@@ -623,7 +627,7 @@ function hsts_plugin_flush_rewrite_rules(): void {
 }
 
 function hsts_plugin_delete_old_options(): void {
-    // Last referenced by plugin version 5.2.4.
+    // Last referenced by plugin version 5.2.5.
     delete_option( 'HEADERS_SECURITY_ADVANCED_HSTS_WP_PLUGIN_VERSION' );
 }
 
@@ -691,7 +695,12 @@ function hsts_plugin_get_dashboard_widget_contents(): void {
     <?php
 }
 
-function hsts_plugin_add_plugin_action_links( array $links, string $file ): array {
+function hsts_plugin_add_plugin_action_links( $links, $file ) {
+    // FIX: Protection against non-array input from other buggy plugins
+    if ( ! is_array( $links ) ) {
+        $links = array();
+    }
+
     static $this_plugin;
 
     if ( ! $this_plugin ) {
@@ -699,7 +708,6 @@ function hsts_plugin_add_plugin_action_links( array $links, string $file ): arra
     }
 
     if ( $file === $this_plugin ) {
-
         $settings_url = admin_url( 'options-general.php?page=headers-security-advanced-hsts-wp-plugin' );
 
         $donate_hstswp_link  = '<a href="https://www.paypal.com/donate/?hosted_button_id=M72GQUM8CWTZS" target="_blank"><b>Donate a coffee</b></a>';
@@ -710,6 +718,7 @@ function hsts_plugin_add_plugin_action_links( array $links, string $file ): arra
         array_unshift( $links, $setting_hstswp_link );
         array_unshift( $links, $donate_hstswp_link );
     }
+    
     return $links;
 }
 add_filter( 'plugin_action_links', 'hsts_plugin_add_plugin_action_links', 10, 2 );
